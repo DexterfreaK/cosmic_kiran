@@ -54,6 +54,7 @@ public:
   virtual void ConstructSDandField();
   
   void PrintCalorParameters();
+  
        
 public:
 
@@ -73,7 +74,10 @@ public:
   G4int              GetNbFibers()          {return nbOfFibers;};  
   G4int              GetNbLayers()          {return nbOfLayers;};    
   G4int              GetNbModules()         {return nbOfModules;};
-        			 
+
+  G4int nGridsX, nGridsY; // Number of grids along X and Y directions
+  std::vector<std::vector<std::vector<G4double>>> moduleGridEnergies;    	
+
 private:
 
   //fibers
@@ -88,6 +92,7 @@ private:
   G4int            nbOfFibers;
   G4double         distanceInterFibers;
   G4double         layerThickness;
+  G4double         moduleSpacing;
   G4LogicalVolume* lvol_layer;
     
   //modules
@@ -120,6 +125,8 @@ private:
 
   void DefineMaterials();
   G4VPhysicalVolume* ConstructCalorimeter();
+
+  void ConstructModuleGrids(G4LogicalVolume* layerLV);
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

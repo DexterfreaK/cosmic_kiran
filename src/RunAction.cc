@@ -72,6 +72,7 @@ G4Run* RunAction::GenerateRun()
 
 void RunAction::BeginOfRunAction(const G4Run*)
 {
+ 
   // save Rndm status
   ////  G4RunManager::GetRunManager()->SetRandomNumberStore(true);
   if (isMaster) G4Random::showEngineStatus();
@@ -96,6 +97,8 @@ void RunAction::BeginOfRunAction(const G4Run*)
 
 void RunAction::EndOfRunAction(const G4Run*)
 {  
+
+
   // print Run summary
   //
   if (isMaster) fRun->EndOfRun();    

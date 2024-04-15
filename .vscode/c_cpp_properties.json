@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/dexter/software/geant4/geant4-v11.2.1/**",
+                "${workspaceFolder}/include",
+                "/home/dexter/software/geant4/geant4-v11.2.1/build/source/global/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-arm64"
+        }
+    ],
+    "version": 4
+}

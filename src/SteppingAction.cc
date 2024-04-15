@@ -72,10 +72,14 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
  G4int iModule = 0;
  G4int iLayer  = 0;
  G4int iFiber  = 0;
+
+ 
    
  G4TouchableHandle touch1 = step->GetPreStepPoint()->GetTouchableHandle(); 
  G4LogicalVolume* lvol = touch1->GetVolume()->GetLogicalVolume();
   
+  G4ThreeVector worldPos = step->GetPreStepPoint()->GetPosition();
+
       if (lvol == lvol_world) return;
  else if (lvol == lvol_module) { iModule = touch1->GetCopyNumber(0);}
  else if (lvol == lvol_layer)  { iLayer  = touch1->GetCopyNumber(0);
@@ -85,7 +89,22 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
                                  iModule = touch1->GetCopyNumber(2);}
 
  // sum edep
- //
+ G4double moduleThickness = detector->GetModuleThickness();
+
+    G4double fiberLength = detector->GetCalorSizeYZ();
+    G4int gridX = static_cast<G4int>((worldPos.y() + fiberLength / 2.0) / (fiberLength / detector->nGridsX));
+    G4int gridY = static_cast<G4int>((worldPos.z() + fiberLength / 2.0) / (fiberLength / detector->nGridsY));
+
+    if (iLayer >= 0 &&
+        gridX >= 0 && gridX < detector->nGridsX &&
+        gridY >= 0 && gridY < detector->nGridsY)
+    {
+        detector->moduleGridEnergies[iLayer][gridX][gridY] += edep;
+        detector->moduleGridEnergies[iLayer][0][0]+=edep;
+    }
+
+
+
  eventAct->SumDeStep(iModule, iLayer, iFiber, edep);         
 }
 
