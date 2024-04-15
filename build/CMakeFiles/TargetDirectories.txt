@@ -1,0 +1,7 @@
+/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles/amsEcal.dir
+/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles/edit_cache.dir
+/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles/rebuild_cache.dir
+/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles/list_install_components.dir
+/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles/install.dir
+/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles/install/local.dir
+/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles/install/strip.dir
