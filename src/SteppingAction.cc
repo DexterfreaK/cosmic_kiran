@@ -95,14 +95,17 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
     G4int gridX = static_cast<G4int>((worldPos.y() + fiberLength / 2.0) / (fiberLength / detector->nGridsX));
     G4int gridY = static_cast<G4int>((worldPos.z() + fiberLength / 2.0) / (fiberLength / detector->nGridsY));
 
-    if (iLayer >= 0 &&
+    G4int klayer = (iModule-1)*detector->GetNbLayers() + iLayer;
+
+    if (iLayer > 0 &&
         gridX >= 0 && gridX < detector->nGridsX &&
         gridY >= 0 && gridY < detector->nGridsY)
     {
-        detector->moduleGridEnergies[iLayer][gridX][gridY] += edep;
-        detector->moduleGridEnergies[iLayer][0][0]+=edep;
+        detector->moduleGridEnergies[klayer][gridX][gridY] += edep/500;
+        
     }
-
+  //    if (iLayer > 0) {
+  // detector->moduleGridEnergies[klayer][0][0]+=edep/500;}
 
 
  eventAct->SumDeStep(iModule, iLayer, iFiber, edep);         

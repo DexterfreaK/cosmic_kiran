@@ -76,12 +76,12 @@ DetectorConstruction::DetectorConstruction()
   nbOfLayers = 1;  // 10
   nbOfModules = 3;  // 9
 
-  moduleSpacing = 0.0 * mm;
+  moduleSpacing = 1.0 * mm;
 
   fiberLength = (nbOfFibers + 0.5) * distanceInterFibers;  // 662.175*mm
 
   moduleGridEnergies.resize(
-    nbOfLayers*nbOfModules, std::vector<std::vector<double>>(nGridsX, std::vector<double>(nGridsY, 0.0)));
+    nbOfLayers*nbOfModules*2, std::vector<std::vector<double>>(nGridsX, std::vector<double>(nGridsY, 0.0)));
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -326,7 +326,7 @@ void DetectorConstruction::PrintCalorParameters()
   //   tree->Branch("gridEnergy", &gridEnergy);
 G4cout << "\n------- grid layer energies-------------------------\n";
       
-  for (G4int module = 0; module < nbOfModules; ++module) {
+  for (G4int module = 1; module <= nbOfModules; ++module) {
     for (G4int gridX = 0; gridX < nGridsX; ++gridX) {
       for (G4int gridY = 0; gridY < nGridsY; ++gridY) {
         G4int index = module * nGridsX * nGridsY + gridX * nGridsY + gridY;

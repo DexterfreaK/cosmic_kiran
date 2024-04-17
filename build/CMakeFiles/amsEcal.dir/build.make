@@ -73,197 +73,197 @@ CMakeFiles/amsEcal.dir/amsEcal.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/amsEcal.cc.o: ../amsEcal.cc
 CMakeFiles/amsEcal.dir/amsEcal.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/amsEcal.dir/amsEcal.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/amsEcal.cc.o -MF CMakeFiles/amsEcal.dir/amsEcal.cc.o.d -o CMakeFiles/amsEcal.dir/amsEcal.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/amsEcal.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/amsEcal.cc.o -MF CMakeFiles/amsEcal.dir/amsEcal.cc.o.d -o CMakeFiles/amsEcal.dir/amsEcal.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/amsEcal.cc
 
 CMakeFiles/amsEcal.dir/amsEcal.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/amsEcal.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/amsEcal.cc > CMakeFiles/amsEcal.dir/amsEcal.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/amsEcal.cc > CMakeFiles/amsEcal.dir/amsEcal.cc.i
 
 CMakeFiles/amsEcal.dir/amsEcal.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/amsEcal.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/amsEcal.cc -o CMakeFiles/amsEcal.dir/amsEcal.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/amsEcal.cc -o CMakeFiles/amsEcal.dir/amsEcal.cc.s
 
 CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o: ../src/ActionInitialization.cc
 CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o -MF CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/ActionInitialization.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o -MF CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/ActionInitialization.cc
 
 CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/ActionInitialization.cc > CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/ActionInitialization.cc > CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.i
 
 CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/ActionInitialization.cc -o CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/ActionInitialization.cc -o CMakeFiles/amsEcal.dir/src/ActionInitialization.cc.s
 
 CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
 CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/DetectorConstruction.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/DetectorConstruction.cc
 
 CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/DetectorConstruction.cc > CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/DetectorConstruction.cc > CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/DetectorConstruction.cc -o CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/DetectorConstruction.cc -o CMakeFiles/amsEcal.dir/src/DetectorConstruction.cc.s
 
 CMakeFiles/amsEcal.dir/src/EventAction.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/EventAction.cc.o: ../src/EventAction.cc
 CMakeFiles/amsEcal.dir/src/EventAction.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/amsEcal.dir/src/EventAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/EventAction.cc.o -MF CMakeFiles/amsEcal.dir/src/EventAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/EventAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/EventAction.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/EventAction.cc.o -MF CMakeFiles/amsEcal.dir/src/EventAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/EventAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/EventAction.cc
 
 CMakeFiles/amsEcal.dir/src/EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/EventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/EventAction.cc > CMakeFiles/amsEcal.dir/src/EventAction.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/EventAction.cc > CMakeFiles/amsEcal.dir/src/EventAction.cc.i
 
 CMakeFiles/amsEcal.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/EventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/EventAction.cc -o CMakeFiles/amsEcal.dir/src/EventAction.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/EventAction.cc -o CMakeFiles/amsEcal.dir/src/EventAction.cc.s
 
 CMakeFiles/amsEcal.dir/src/HistoManager.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/HistoManager.cc.o: ../src/HistoManager.cc
 CMakeFiles/amsEcal.dir/src/HistoManager.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/amsEcal.dir/src/HistoManager.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/HistoManager.cc.o -MF CMakeFiles/amsEcal.dir/src/HistoManager.cc.o.d -o CMakeFiles/amsEcal.dir/src/HistoManager.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/HistoManager.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/HistoManager.cc.o -MF CMakeFiles/amsEcal.dir/src/HistoManager.cc.o.d -o CMakeFiles/amsEcal.dir/src/HistoManager.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/HistoManager.cc
 
 CMakeFiles/amsEcal.dir/src/HistoManager.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/HistoManager.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/HistoManager.cc > CMakeFiles/amsEcal.dir/src/HistoManager.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/HistoManager.cc > CMakeFiles/amsEcal.dir/src/HistoManager.cc.i
 
 CMakeFiles/amsEcal.dir/src/HistoManager.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/HistoManager.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/HistoManager.cc -o CMakeFiles/amsEcal.dir/src/HistoManager.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/HistoManager.cc -o CMakeFiles/amsEcal.dir/src/HistoManager.cc.s
 
 CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o: ../src/PhysListEmStandard.cc
 CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o -MF CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o.d -o CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysListEmStandard.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o -MF CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o.d -o CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysListEmStandard.cc
 
 CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysListEmStandard.cc > CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysListEmStandard.cc > CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.i
 
 CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysListEmStandard.cc -o CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysListEmStandard.cc -o CMakeFiles/amsEcal.dir/src/PhysListEmStandard.cc.s
 
 CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o: ../src/PhysicsList.cc
 CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o -MF CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o.d -o CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsList.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o -MF CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o.d -o CMakeFiles/amsEcal.dir/src/PhysicsList.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsList.cc
 
 CMakeFiles/amsEcal.dir/src/PhysicsList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/PhysicsList.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsList.cc > CMakeFiles/amsEcal.dir/src/PhysicsList.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsList.cc > CMakeFiles/amsEcal.dir/src/PhysicsList.cc.i
 
 CMakeFiles/amsEcal.dir/src/PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/PhysicsList.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsList.cc -o CMakeFiles/amsEcal.dir/src/PhysicsList.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsList.cc -o CMakeFiles/amsEcal.dir/src/PhysicsList.cc.s
 
 CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o: ../src/PhysicsListMessenger.cc
 CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o -MF CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o.d -o CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsListMessenger.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o -MF CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o.d -o CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsListMessenger.cc
 
 CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsListMessenger.cc > CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsListMessenger.cc > CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.i
 
 CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsListMessenger.cc -o CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PhysicsListMessenger.cc -o CMakeFiles/amsEcal.dir/src/PhysicsListMessenger.cc.s
 
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorAction.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorAction.cc > CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorAction.cc > CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.i
 
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorAction.cc -o CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorAction.cc -o CMakeFiles/amsEcal.dir/src/PrimaryGeneratorAction.cc.s
 
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o: ../src/PrimaryGeneratorMessenger.cc
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o -MF CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o.d -o CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorMessenger.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o -MF CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o.d -o CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorMessenger.cc
 
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorMessenger.cc > CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorMessenger.cc > CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.i
 
 CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorMessenger.cc -o CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/PrimaryGeneratorMessenger.cc -o CMakeFiles/amsEcal.dir/src/PrimaryGeneratorMessenger.cc.s
 
 CMakeFiles/amsEcal.dir/src/Run.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/Run.cc.o: ../src/Run.cc
 CMakeFiles/amsEcal.dir/src/Run.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/amsEcal.dir/src/Run.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/Run.cc.o -MF CMakeFiles/amsEcal.dir/src/Run.cc.o.d -o CMakeFiles/amsEcal.dir/src/Run.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/Run.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/Run.cc.o -MF CMakeFiles/amsEcal.dir/src/Run.cc.o.d -o CMakeFiles/amsEcal.dir/src/Run.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/Run.cc
 
 CMakeFiles/amsEcal.dir/src/Run.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/Run.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/Run.cc > CMakeFiles/amsEcal.dir/src/Run.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/Run.cc > CMakeFiles/amsEcal.dir/src/Run.cc.i
 
 CMakeFiles/amsEcal.dir/src/Run.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/Run.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/Run.cc -o CMakeFiles/amsEcal.dir/src/Run.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/Run.cc -o CMakeFiles/amsEcal.dir/src/Run.cc.s
 
 CMakeFiles/amsEcal.dir/src/RunAction.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/RunAction.cc.o: ../src/RunAction.cc
 CMakeFiles/amsEcal.dir/src/RunAction.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/amsEcal.dir/src/RunAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/RunAction.cc.o -MF CMakeFiles/amsEcal.dir/src/RunAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/RunAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/RunAction.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/RunAction.cc.o -MF CMakeFiles/amsEcal.dir/src/RunAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/RunAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/RunAction.cc
 
 CMakeFiles/amsEcal.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/RunAction.cc > CMakeFiles/amsEcal.dir/src/RunAction.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/RunAction.cc > CMakeFiles/amsEcal.dir/src/RunAction.cc.i
 
 CMakeFiles/amsEcal.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/RunAction.cc -o CMakeFiles/amsEcal.dir/src/RunAction.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/RunAction.cc -o CMakeFiles/amsEcal.dir/src/RunAction.cc.s
 
 CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc
 CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o -MF CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/SteppingAction.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o -MF CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/SteppingAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/SteppingAction.cc
 
 CMakeFiles/amsEcal.dir/src/SteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/SteppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/SteppingAction.cc > CMakeFiles/amsEcal.dir/src/SteppingAction.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/SteppingAction.cc > CMakeFiles/amsEcal.dir/src/SteppingAction.cc.i
 
 CMakeFiles/amsEcal.dir/src/SteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/SteppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/SteppingAction.cc -o CMakeFiles/amsEcal.dir/src/SteppingAction.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/SteppingAction.cc -o CMakeFiles/amsEcal.dir/src/SteppingAction.cc.s
 
 CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o: CMakeFiles/amsEcal.dir/flags.make
 CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o: ../src/TrackingAction.cc
 CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o: CMakeFiles/amsEcal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o -MF CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/TrackingAction.cc
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o -MF CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o.d -o CMakeFiles/amsEcal.dir/src/TrackingAction.cc.o -c /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/TrackingAction.cc
 
 CMakeFiles/amsEcal.dir/src/TrackingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amsEcal.dir/src/TrackingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/TrackingAction.cc > CMakeFiles/amsEcal.dir/src/TrackingAction.cc.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/TrackingAction.cc > CMakeFiles/amsEcal.dir/src/TrackingAction.cc.i
 
 CMakeFiles/amsEcal.dir/src/TrackingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amsEcal.dir/src/TrackingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/TrackingAction.cc -o CMakeFiles/amsEcal.dir/src/TrackingAction.cc.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dexter/software/geant4/geant4-v11.2.1/examples/advanced/amsEcal/src/TrackingAction.cc -o CMakeFiles/amsEcal.dir/src/TrackingAction.cc.s
 
 # Object files for target amsEcal
 amsEcal_OBJECTS = \
