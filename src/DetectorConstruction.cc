@@ -45,6 +45,8 @@
 #include "G4Transform3D.hh"
 #include "G4Tubs.hh"
 #include "G4VisAttributes.hh"
+#include <fstream>
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -319,28 +321,24 @@ G4VPhysicalVolume* DetectorConstruction::ConstructCalorimeter()
 
 void DetectorConstruction::PrintCalorParameters()
 {
-  // TFile* outputFile = new TFile("output.root", "RECREATE");
-  //   TTree* tree = new TTree("moduleGrid", "Module Grid Energies");
+  std::ofstream outFile("moduleGridEnergies.txt");
 
-  //   std::vector<double> gridEnergy(nModules * nGridsX * nGridsY);
-  //   tree->Branch("gridEnergy", &gridEnergy);
-G4cout << "\n------- grid layer energies-------------------------\n";
+  G4cout << "\n------- grid layer energies-------------------------\n";
       
   for (G4int module = 1; module <= nbOfModules; ++module) {
     for (G4int gridX = 0; gridX < nGridsX; ++gridX) {
       for (G4int gridY = 0; gridY < nGridsY; ++gridY) {
-        G4int index = module * nGridsX * nGridsY + gridX * nGridsY + gridY;
-        G4cout << G4BestUnit(moduleGridEnergies[module][gridX][gridY], "Energy") << " ";
+        G4double energy = moduleGridEnergies[module][gridX][gridY];
+        outFile << module << " " << gridX << " " << gridY << " " << energy << "\n";
+        G4cout << G4BestUnit(energy, "Energy") << " ";
       }
       G4cout << "\n";
     }
-     G4cout << "\n";
-    // tree->Fill();
+    G4cout << "\n";
   }
 
-  // tree->Write();
-  // outputFile->Close();
-  
+  outFile.close();
+
   G4cout << "\n-------------------------------------------------------------"
          << "\n ---> The calorimeter is " << nbOfModules << " Modules"
          << "\n ---> A Module is " << nbOfLayers << " Layers + 1 milled Layer";
@@ -384,5 +382,13 @@ void DetectorConstruction::ConstructSDandField()
     fFieldMessenger.Put(msg);
   }
 }
+
+
+
+// Include other necessary headers if needed
+
+// Define your DetectorConstruction class here if it's not already defined
+
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
