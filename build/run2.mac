@@ -14,6 +14,8 @@
 /gun/particle e-
 /gun/energy 1 GeV
 /ams/gun/beam 4 mm
+
+/control/execute vis.mac
 #
 /analysis/setFileName run2
 #
@@ -22,6 +24,8 @@
 /analysis/h1/set 3 100  0. 100. none
 /analysis/h1/set 4 100  0. 100. none
 /analysis/h1/set 5 250  0. 500. none
+
+
 #
 /run/printProgress 100
 #

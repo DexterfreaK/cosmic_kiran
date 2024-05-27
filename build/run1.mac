@@ -15,6 +15,8 @@
 /gun/energy 1 GeV
 /ams/gun/beam 1 cm
 #
+/control/execute vis.mac
+
 /run/printProgress 1000
 #
 /run/beamOn 10000
