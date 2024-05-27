@@ -1,58 +1,92 @@
+# Set verbosity levels
+/control/verbose 2
+/run/verbose 2
+
+# Add physics
+/ams/phys/addPhysics local
+/run/setCut 1 mm
+
+# Initialize the run manager
+/run/initialize
+
+# Set particle gun properties
+/ams/gun/setDefault
+/gun/particle e-
+/gun/energy 1 GeV
+/ams/gun/beam 4 mm
+
+# Set analysis output
+/analysis/setFileName run2
+
+# Define histograms
+/analysis/h1/set 1 100 0. 2. GeV    # etot in ecal
+/analysis/h1/set 2 100 0. 100. MeV  # evis in ecal
+/analysis/h1/set 3 100 0. 100. none
+/analysis/h1/set 4 100 0. 100. none
+/analysis/h1/set 5 250 0. 500. none
+
+# Print progress every 100 events
+/run/printProgress 100
+
+# Adjust event keeping for visualization
+/vis/scene/endOfEventAction accumulate -1  # or set a higher limit
+
+# Start the beam with 500 events
+/run/beamOn 500
+
+# Visualization settings
+
 # Open a viewer
 /vis/open
-# This opens the default viewer - see examples/basic/B1/vis.mac for a
-# more comprehensive overview of options. Also the documentation.
-#
-# Disable auto refresh and quieten vis messages whilst scene and
-# trajectories are established:
+
+# Disable auto refresh and quieten vis messages whilst scene and trajectories are established:
 /vis/viewer/set/autoRefresh false
 /vis/verbose errors
-#
+
 # Draw geometry:
 /vis/drawVolume
-#
-# Specify view angle:
+
+# Specify view angle (optional):
 #/vis/viewer/set/viewpointThetaPhi 90. 0.
-#
-# Specify zoom value:
+
+# Specify zoom value (optional):
 #/vis/viewer/zoom 2.
-#
-# Specify style (surface or wireframe):
+
+# Specify style (surface or wireframe) (optional):
 #/vis/viewer/set/style wireframe
-#
-# Draw coordinate axes:
+
+# Draw coordinate axes (optional):
 #/vis/scene/add/axes 0 0 0 1 m
-#
-# Draw smooth trajectories at end of event, showing trajectory points
-# as markers 2 pixels wide:
+
+# Draw smooth trajectories at end of event, showing trajectory points as markers 2 pixels wide:
 /vis/scene/add/trajectories smooth
 /vis/modeling/trajectories/create/drawByCharge
 #/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
 #/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
 # (if too many tracks cause core dump => /tracking/storeTrajectory 0)
-#
+
 # Draw hits at end of event:
-#/vis/scene/add/hits
-#
-# To draw only gammas:
+/vis/scene/add/hits
+
+# To draw only gammas (optional):
 #/vis/filtering/trajectories/create/particleFilter
 #/vis/filtering/trajectories/particleFilter-0/add gamma
-#
-# To invert the above, drawing all particles except gammas,
-# keep the above two lines but also add:
+
+# To invert the above, drawing all particles except gammas (optional):
 #/vis/filtering/trajectories/particleFilter-0/invert true
-#
+
 # Many other options are available with /vis/modeling and /vis/filtering.
-# For example, to select colour by particle ID:
+# For example, to select colour by particle ID (optional):
 #/vis/modeling/trajectories/create/drawByParticleID
 #/vis/modeling/trajectories/drawByParticleID-0/set e- blue
-#
+
 # To superimpose all of the events from a given run:
 /vis/scene/endOfEventAction accumulate
-#
+
 # Re-establish auto refreshing and verbosity:
 /vis/viewer/set/autoRefresh true
 /vis/verbose warnings
-#
+
 # For file-based drivers, use this to create an empty detector view:
-#/vis/viewer/flush
+/vis/viewer/flush
+
