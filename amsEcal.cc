@@ -38,6 +38,7 @@
 #include "G4SteppingVerbose.hh"
 #include "Randomize.hh"
 
+#include "TrackerConstruction.hh"
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
 #include "ActionInitialization.hh"
@@ -64,6 +65,10 @@ int main(int argc,char** argv) {
      G4int nThreads = G4UIcommand::ConvertToInt(argv[2]);
      runManager->SetNumberOfThreads(nThreads);
   }
+  
+  G4double distanceFromCalorimeter = 20; // Example distance
+  TrackerConstruction* trackerConstruction = new TrackerConstruction(distanceFromCalorimeter);
+  runManager->SetUserInitialization(trackerConstruction);
   
   //set mandatory initialization classes
   DetectorConstruction* detector = new DetectorConstruction;
