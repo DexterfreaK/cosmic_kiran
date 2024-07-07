@@ -1,0 +1,74 @@
+# Compiled object files
+*.o
+*.lo
+*.la
+*.al
+*.a
+*.so
+*.dll
+*.dylib
+
+# Compiled static libraries
+*.lib
+
+# Compiled dynamic libraries
+*.d
+
+# Executable files
+*.exe
+*.out
+*.app
+
+# Debug files
+*.debug
+
+# Logs
+*.log
+
+# Directories
+build/
+bin/
+lib/
+obj/
+CMakeFiles/
+
+# CMake specific files
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+install_manifest.txt
+
+# MacOS specific files
+.DS_Store
+
+# IDE specific files
+# Eclipse
+.project
+.cproject
+
+# Visual Studio
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
+# CLion
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# QtCreator
+*.pro.user
+*.qmake.stash
+
+# Geant4 specific files
+.g4
+
+# Miscellaneous
+*.swp
+*.bak
+*~
+*.orig
