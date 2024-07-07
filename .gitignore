@@ -26,11 +26,16 @@
 *.log
 
 # Directories
-build/
-bin/
-lib/
-obj/
-CMakeFiles/
+# Ignore everything in the build directory
+build/*
+
+# Do not ignore .py files in the build directory
+!build/**/*.py
+!build/**/*.mac
+bin/*
+lib/*
+obj/*
+CMakeFiles/*
 
 # CMake specific files
 CMakeCache.txt

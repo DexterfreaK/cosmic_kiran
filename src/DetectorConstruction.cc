@@ -75,8 +75,8 @@ DetectorConstruction::DetectorConstruction()
   distanceInterFibers = 1.35 * mm;  // 1.35*mm
   layerThickness = 1.73 * mm;  // 1.68*mm
   milledLayer = 1.00 * mm;  // 1.40*mm ?
-  nbOfLayers = 1;  // 10
-  nbOfModules = 3;  // 9
+  nbOfLayers = 10;  // 10
+  nbOfModules = 9;  // 9
 
   moduleSpacing = 1.0 * mm;
 
@@ -375,7 +375,7 @@ void DetectorConstruction::ConstructSDandField()
     // Create global magnetic field messenger.
     // Uniform magnetic field is then created automatically if
     // the field value is not zero.
-    G4ThreeVector fieldValue = G4ThreeVector();
+    G4ThreeVector fieldValue = G4ThreeVector(1,1);
     G4GlobalMagFieldMessenger* msg = new G4GlobalMagFieldMessenger(fieldValue);
     // msg->SetVerboseLevel(1);
     G4AutoDelete::Register(msg);

@@ -66,9 +66,9 @@ int main(int argc,char** argv) {
      runManager->SetNumberOfThreads(nThreads);
   }
   
-  G4double distanceFromCalorimeter = 20; // Example distance
-  TrackerConstruction* trackerConstruction = new TrackerConstruction(distanceFromCalorimeter);
-  runManager->SetUserInitialization(trackerConstruction);
+  // G4double distanceFromCalorimeter = 20; // Example distance
+  // TrackerConstruction* trackerConstruction = new TrackerConstruction(distanceFromCalorimeter);
+  // runManager->SetUserInitialization(trackerConstruction);
   
   //set mandatory initialization classes
   DetectorConstruction* detector = new DetectorConstruction;
