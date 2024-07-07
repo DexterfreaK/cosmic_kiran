@@ -93,8 +93,10 @@ private:
   G4double         distanceInterFibers;
   G4double         layerThickness;
   G4double         moduleSpacing;
-  G4LogicalVolume* lvol_layer;
-    
+  G4double         componentSpacing;
+  G4int            numberOfComponents;
+  G4LogicalVolume *lvol_layer;
+
   //modules
   //
   G4Material*      moduleMat;  

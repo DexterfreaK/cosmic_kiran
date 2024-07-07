@@ -12,7 +12,7 @@
 # Set particle gun properties
 /ams/gun/setDefault
 /gun/particle e-
-/gun/energy 500 MeV
+/gun/energy 250 MeV
 /ams/gun/beam 4 mm
 
 # Set analysis output

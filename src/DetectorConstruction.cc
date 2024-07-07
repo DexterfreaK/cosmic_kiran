@@ -79,8 +79,10 @@ DetectorConstruction::DetectorConstruction()
   nbOfModules = 9;  // 9
 
   moduleSpacing = 1.0 * mm;
-
-  fiberLength = (nbOfFibers + 0.5) * distanceInterFibers;  // 662.175*mm
+  componentSpacing = 10 * cm;
+  numberOfComponents = 2;
+  
+  fiberLength = (nbOfFibers + 0.5) * distanceInterFibers; // 662.175*mm
 
   moduleGridEnergies.resize(
     nbOfLayers*nbOfModules*2, std::vector<std::vector<double>>(nGridsX, std::vector<double>(nGridsY, 0.0)));
@@ -203,7 +205,7 @@ G4VPhysicalVolume* DetectorConstruction::ConstructCalorimeter()
                       false,  // no boulean operat
                       k + 1);  // copy number
   }
-
+  
   // modules
   //
   moduleThickness = layerThickness * nbOfLayers + milledLayer;
@@ -269,9 +271,25 @@ G4VPhysicalVolume* DetectorConstruction::ConstructCalorimeter()
     Xcenter += moduleSpacing;
   }
 
+  // Second calorimeter (spaced out)
+  G4Box *svol_calorimeter2 = new G4Box("calorimeter2", 0.5 * sizeX, 0.5 * sizeY, 0.5 * sizeZ);
+  G4LogicalVolume *lvol_calorimeter2 = new G4LogicalVolume(svol_calorimeter2, calorimeterMat, "calorimeter2");
+
+  Xcenter = -0.5 * (calorThickness + moduleThickness);
+  for (G4int k = 0; k < nbOfModules; k++)
+  {
+    Xcenter += moduleThickness;
+    G4RotationMatrix rotm;
+    if ((k + 1) % 2 == 0)
+      rotm.rotateX(90 * deg);
+    G4Transform3D transform(rotm, G4ThreeVector(Xcenter, 0., 0.));
+    new G4PVPlacement(transform, lvol_module, "module", lvol_calorimeter2, false, k + 1);
+    Xcenter += moduleSpacing;
+  }
+
   // world
   //
-  sizeX = 1.2 * calorThickness;
+  sizeX = 1.2 * (numberOfComponents * calorThickness + componentSpacing);
   sizeY = 1.2 * fiberLength;
   sizeZ = 1.2 * fiberLength;
 
@@ -294,13 +312,8 @@ G4VPhysicalVolume* DetectorConstruction::ConstructCalorimeter()
 
   // put calorimeter in world
   //
-  new G4PVPlacement(0,  // no rotation
-                    G4ThreeVector(),  // at (0,0,0)
-                    lvol_calorimeter,  // logical volume
-                    "calorimeter",  // name
-                    lvol_world,  // mother  volume
-                    false,  // no boolean operation
-                    0);  // copy number
+  new G4PVPlacement(0, G4ThreeVector(), lvol_calorimeter, "calorimeter", lvol_world, false, 0);
+  new G4PVPlacement(0, G4ThreeVector(calorThickness + componentSpacing, 0, 0), lvol_calorimeter2, "calorimeter2", lvol_world, false, 1);
 
   PrintCalorParameters();
 
