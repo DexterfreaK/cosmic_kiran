@@ -58,7 +58,9 @@ DetectorConstruction::DetectorConstruction()
     moduleMat(0),
     lvol_module(0),
     calorimeterMat(0),
+    calorimeterMat2(0),
     lvol_calorimeter(0),
+    lvol_calorimeter2(0),
     worldMat(0),
     pvol_world(0),
     defaultMat(0),
@@ -77,7 +79,7 @@ DetectorConstruction::DetectorConstruction()
   milledLayer = 1.00 * mm;  // 1.40*mm ?
   nbOfLayers = 10;  // 10
   nbOfModules = 9;  // 9
-
+  nbOfModules2 = 4;
   moduleSpacing = 1.0 * mm;
   componentSpacing = 10 * cm;
   numberOfComponents = 2;
@@ -140,6 +142,8 @@ void DetectorConstruction::DefineMaterials()
   G4double temperature = 2.73 * kelvin;
   G4Material* Vacuum =
     new G4Material("Galactic", 1., 1.008 * g / mole, density, kStateGas, temperature, pressure);
+    
+  G4Material* Si = new G4Material("Silicon", 14., 28.09*g/mole, 2.33*g/cm3);
 
   // attribute materials
   //
@@ -148,9 +152,10 @@ void DetectorConstruction::DefineMaterials()
   absorberMat = Pb;
   moduleMat = defaultMat;
   calorimeterMat = defaultMat;
+  calorimeterMat2 = Si;
   worldMat = defaultMat;
 
-  // print table
+  // print table	
   //
   G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 }
@@ -180,6 +185,7 @@ G4VPhysicalVolume* DetectorConstruction::ConstructCalorimeter()
   // layer
   //
   G4double sizeX = layerThickness;
+  G4double sizeX2 = layerThickness;
   G4double sizeY = distanceInterFibers * nbOfFibers;
   G4double sizeZ = fiberLength;
 
@@ -270,13 +276,16 @@ G4VPhysicalVolume* DetectorConstruction::ConstructCalorimeter()
 
     Xcenter += moduleSpacing;
   }
+  
+  calorThickness2 = moduleThickness * nbOfModules2 + moduleSpacing * nbOfModules2;
+  sizeX2 = calorThickness2;
 
   // Second calorimeter (spaced out)
-  G4Box *svol_calorimeter2 = new G4Box("calorimeter2", 0.5 * sizeX, 0.5 * sizeY, 0.5 * sizeZ);
-  G4LogicalVolume *lvol_calorimeter2 = new G4LogicalVolume(svol_calorimeter2, calorimeterMat, "calorimeter2");
+  G4Box *svol_calorimeter2 = new G4Box("calorimeter2", 0.5 * sizeX2, 0.5 * sizeY, 0.5 * sizeZ);
+  G4LogicalVolume *lvol_calorimeter2 = new G4LogicalVolume(svol_calorimeter2, calorimeterMat2, "calorimeter2");
 
-  Xcenter = -0.5 * (calorThickness + moduleThickness);
-  for (G4int k = 0; k < nbOfModules; k++)
+  Xcenter = -0.5 * (calorThickness2 + moduleThickness);
+  for (G4int k = 0; k < nbOfModules2; k++)
   {
     Xcenter += moduleThickness;
     G4RotationMatrix rotm;
@@ -312,9 +321,9 @@ G4VPhysicalVolume* DetectorConstruction::ConstructCalorimeter()
 
   // put calorimeter in world
   //
+  new G4PVPlacement(0, G4ThreeVector(calorThickness2 + componentSpacing, 0, 0), lvol_calorimeter2, "calorimeter2", lvol_world, false, 1);
   new G4PVPlacement(0, G4ThreeVector(), lvol_calorimeter, "calorimeter", lvol_world, false, 0);
-  new G4PVPlacement(0, G4ThreeVector(calorThickness + componentSpacing, 0, 0), lvol_calorimeter2, "calorimeter2", lvol_world, false, 1);
-
+  
   PrintCalorParameters();
 
   // Visualization attributes

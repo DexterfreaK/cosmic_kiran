@@ -110,7 +110,14 @@ private:
   G4Material*      calorimeterMat;  
   G4int            nbOfModules;
   G4double         calorThickness;
-  G4LogicalVolume* lvol_calorimeter;            
+  G4LogicalVolume* lvol_calorimeter;  
+  
+  //calorimeter2
+  //
+  G4Material*      calorimeterMat2;  
+  G4int            nbOfModules2;
+  G4double         calorThickness2;
+  G4LogicalVolume* lvol_calorimeter2;          
   
   //world
   //
